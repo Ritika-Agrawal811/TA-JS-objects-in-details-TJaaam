@@ -24,8 +24,8 @@ For each different ways of creating object write different solutions.
 
 ```js
 const testData = {
-  title: 'Where is the capital of Jordan',
-  options: ['Tashkent', 'Amaan', 'Kuwait City', 'Nairobi'],
+  title: "Where is the capital of Jordan",
+  options: ["Tashkent", "Amaan", "Kuwait City", "Nairobi"],
   correctAnswerIndex: 1,
 };
 ```
