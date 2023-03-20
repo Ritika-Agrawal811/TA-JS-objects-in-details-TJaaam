@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  margin: 0 auto;
+  width: min(90%, 800px);
+  height: 500px;
+  box-shadow: 0 0 0.5em #bebebe;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #0047ab;
+  padding: 0.25em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  background-color: #f0ffff;
+  padding: 0.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-btn {
+  background-color: #0047ab;
+  border: 0;
+  color: #fff;
+  font-size: 1.15rem;
+  border-radius: 0.15em;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+}
+
+.question-container {
+  padding: 1em 0;
+}
+
+.quiz-question p {
+  color: #323232;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 1.5em 0.5em 0.5em 0.5em;
+  font-weight: 700;
+  background-color: #efefef;
+}
+
+.quiz-question p::before {
+  content: "Question";
+  position: absolute;
+  top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.quiz-question label {
+  border: 1px solid #ddd;
+  display: block;
+  height: 40px;
+  font-size: 1.15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  text-transform: capitalize;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.quiz-question input[type="radio"] {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.quiz-question input[type="radio"]:checked {
+  background-color: #eee;
+}
+
+.quiz-question input[type="radio"].correct:checked {
+  background-color: #50c878;
+}
