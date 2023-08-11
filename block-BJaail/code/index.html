@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookly App</title>
+  </head>
+  <body>
+    <main>
+      <section class="form-container">
+        <h1>
+          <i class="fa-solid fa-book-open text-blue"></i> My
+          <span class="text-blue">Book</span>List
+        </h1>
+        <form id="book-form">
+          <label for="bookTitle">Title:</label>
+          <input type="text" id="bookTitle" />
+          <label for="bookAuthor">Author:</label>
+          <input type="text" id="bookAuthor" />
+
+          <button type="submit" class="add-book-button" id="addBookBtn">
+            Add Book
+          </button>
+        </form>
+      </section>
+
+      <section class="booklist-table-container">
+        <table class="booklist-table">
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Read</th>
+            <th></th>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
